@@ -1,0 +1,16 @@
+<odoo>
+  <data>
+    <record id="action_redirect_grafana" model="ir.actions.act_url">
+        <field name="name">Grafana Dashboard</field>
+        <field name="url">http://192.168.0.197:3000/</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem
+        id="redirect_to_grafana"
+        name="Grafana Dashboard"
+        sequence="10"
+        action="action_redirect_grafana"
+        web_icon="grafana_link,static/src/img/icon.png" />
+  </data>
+</odoo>
